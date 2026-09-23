@@ -1,3 +1,11 @@
+'''
+Program Name: Lab 1 EECSE4764
+Authors: Byung Hyo "Brandon" Kim, Jae Sung Hwang, Ian (Please put your last name!)
+Date Created: 09.22.26
+Date Last Modified: 09.22.26
+Modified By: Brandon
+'''
+
 from machine import Pin
 import utime
 import neopixel
