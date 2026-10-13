@@ -1,0 +1,9 @@
+1. In the bottom of the board there is a layout of MOSI and MISO that explains which GPIO # it is associated to. 
+   In the accelerometor, or the slave, the connection of MO and MI are written so that the right pins can be connected together.
+   MI <-> MISO, MO <-> MOSI
+
+2. Read/Write in SPI is performed as a parallel bus control, the serial clock sends the analog signal and the label of
+   Master and Slave distinguishes how the write and read are performed between the two parties.
+   For something like a display, the serial bus control could help with confirming the signal between two parties.
+   For something like an accelerometor, having the check be manual for the engineer should be done as the ADC input happens
+   instantaneously with little delay.
